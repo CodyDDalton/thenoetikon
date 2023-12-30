@@ -1,0 +1,20 @@
+{
+  "name": "quote-app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "20.10.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-front": "npm install --prefix noetikon-front",
+    "install-api": "npm install --prefix api",
+    "build-front": "npm run build --prefix noetikon-front",
+    "start": "npm start --prefix api",
+    "dev": "concurrently --raw \"npm run api\" \"npm run front\"",
+    "front": "cd noetikon-front && npm run start",
+    "api": "cd api && node server.js"
+  },
+  "author": "Cody Dalton",
+  "license": "MIT"
+}
