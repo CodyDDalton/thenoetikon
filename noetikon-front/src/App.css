@@ -33,6 +33,7 @@
     border: none;
     cursor:pointer;
     bottom:0;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
   }
   #output {
     font-family: Serif;
@@ -44,6 +45,7 @@
     color: #3C1C1B;
     text-decoration:underline;
     cursor:pointer;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
   }
   #featured-quote {
     font-size: 1rem;
@@ -53,6 +55,80 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+  }
+  #search-section {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+  }
+  #bar-section {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  #search-label {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom:1%;
+    margin-top:5%;
+    color: #3C1C1B;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+  }
+  #search-input {
+    height:30px;
+    width:500px;
+    font-size:1.25rem;
+    border: 3px solid #3C1C1B;
+    filter: drop-shadow(0px 2px 2px #00000054);
+
+  }
+  #search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+  }
+  #search-button {
+    background-color:#512827;
+    width:60px;
+    height: 38px;
+    filter: drop-shadow(0px 2px 2px #00000054);
+    border: 3px solid #3C1C1B;
+  }
+  #search-logo {
+    width:24px;
+    
+  }
+  #filter-section {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+  }
+  #filter-button {
+    display:flex;
+    flex-direction: row;
+    height:38px;
+    justify-content: center;
+    align-items:center;
+    margin-top:58%;
+    margin-left:15%;
+    background-color: #512827;
+    filter: drop-shadow(0px 2px 2px #00000054);
+    border: 3px solid #3C1C1B;
+    
+  }
+  #filter-label {
+    text-transform: uppercase;
+    font-size:1rem;
+    margin-top:20%;
+    color:#ffffffd3;
+  }
+  #filter-logo {
+    width:24px;
   }
 }
 
@@ -204,5 +280,9 @@
 }
 
 #Home {
+  height: 100%;
+}
+
+#Search {
   height: 100%;
 }
